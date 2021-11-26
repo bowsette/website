@@ -10,12 +10,12 @@
     
 
     //Database connection
-    $conn = new mysqli('localhost','root','','signup');
+    $conn = new mysqli('localhost:3307','root','','signup');
     if($conn->connect_error){
         die('Connection Failed   :  ' .$conn->connect_error);
     } else {
-        $stmt = $conn->prepare("insert into registration(username, firstName, lastName, phone, email, password, confirmPassword
-        values(?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("insert into registration(username, firstName, lastName, phone, email, password, confirmPassword) 
+            values(?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sssisss",$username, $firstName, $lastName, $phone, $email, $password, $confirmPassword);
         $stmt->execte();
         echo "registration successfull";
