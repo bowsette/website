@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="container-center-horizontal">
+    <div class="desktop-1">
+      <div class="overlap-group">
+        <h1 class="title">Welcome</h1>
+        <div class="text-1">Please create an account to get started</div>
+        <form action="connect.php" method="post">
+          <label for="fname">username:</label>
+          <input type="text" id="username" name="username"><br><br>
+          <div class="flex-row">
+            <form action="/action_page.php">
+              <label for="fname">First name:</label>
+              <input type="text" id="firstName" name="firstName"><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lastName" name="lastName"><br><br>
+            </form>
+          </div>
+          <div class="phone-number">phone number:</div>
+          <input type="text" id="phone" name="phone"><br><br>
+
+
+          <label for="fname">email (optional):</label>
+          <input type="text" id="email" name="email"><br><br>
+          <div class="flex-row-1">
+            <div class="password">password</div>
+            <div class="confirm-password">confirm password</div>
+          </div>
+          <div class="flex-row-2">
+            
+          <input type="text" id="password" name="password"><br><br>
+
+          <input type="text" id="confirmPassword" name="confirmPassword"><br><br>
+          </div>
+          <div class="overlap-group1">
+            <button type="button">Sign up!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
