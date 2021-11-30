@@ -201,3 +201,34 @@ rgba(255, 255, 255, 1);
   flex-shrink: 0;
   pointer-events: auto;
 }
+
+.header {
+  padding: 30px;
+  text-align: right;
+  background: #1abc9c;
+  color: white;
+  font-size: 25px;
+}
+
+.navigation-buttons {
+  text-align: center;
+  margin-top: 50px
+}
+
+.services {
+  margin-right: 400px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #588c7e;
+  font-family: monospace;
+  font-size: 25px;
+  text-align: left;
+  }
+  th {
+  background-color: #588c7e;
+  color: white;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2}
